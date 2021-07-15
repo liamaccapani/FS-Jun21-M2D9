@@ -18,11 +18,14 @@ Make sure you check the documentation before creting anything custom.
 <html>
 
 <head>
-    <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
-
-    <style>
-        /* PREVIOUS CODE */
-    </style>
+    <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS ✓ -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -31,14 +34,86 @@ Make sure you check the documentation before creting anything custom.
         Create a Jumbotron section with a quick explanation / image of the website.
         Make it appear with a fade-in animation effect when the page loads.
     -->
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
 
     <!-- EXERCISE 2
         Use the Bootstrap Card to contain every album in the favorite list.
         Use the elements of a card to display nicely the album informations such as album title, artist, year, etc..
     -->
+    <div class="container d-flex">                  <!--Flex container-->
+        <div class="row">                    <!--Row with cards and tables-->
+            <div class="col">
+                <div class="card-container">
+                    <div class="card h-100">
+                        <img src="/assets/JD-Closer.jpg" class="card-img-top" alt="Closer">
+                        <div class="card-body text-nowrap text-truncate">
+                          <h5 class="card-title">Closer</h5>
+                          <p class="card-text">Joy Division</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="table-container">
+                    <div class="col">
+                        <table class="table table-striped table-dark">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+      
     <!-- EXERCISE 3
-        Foreach album in the favorite list, place a badge on top of it with the genre of the album
+        For each album in the favorite list, place a badge on top of it with the genre of the album
     -->
 
     <!-- EXERCISE 4
@@ -115,6 +190,25 @@ Make sure you check the documentation before creting anything custom.
         Considering the button you've created in ex. 5 that deletes the row:
         Add a fade-out effect to the row before it gets removed, using a CSS transition effect
     -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous">
+    </script>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,19 @@
+body {
+    background-color: rgba(0, 0, 0, 0.664);
+}
+
+.jumbotron {
+    animation: fade-in 4s 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+} 
+
